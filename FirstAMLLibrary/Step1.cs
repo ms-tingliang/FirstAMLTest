@@ -8,7 +8,7 @@ namespace FirstAMLLibrary
         {
             var classifier = new ParcelClassifier();
             var outputBuilder = new StringBuilder();
-            var calculator = new ParcelCostCalculator();
+            var calculator = new ParcelCostCalculator(false);
             var totalCost = 0.0;
             foreach (var parcel in parcels)
             {
@@ -26,7 +26,7 @@ namespace FirstAMLLibrary
         {
             double totalCost = 0;
             var classifier = new ParcelClassifier();
-            var calculator = new ParcelCostCalculator();
+            var calculator = new ParcelCostCalculator(false);
             foreach (var parcel in parcels)
             {
                 totalCost += calculator.CalculateUnitCost(parcel, classifier, reporter);

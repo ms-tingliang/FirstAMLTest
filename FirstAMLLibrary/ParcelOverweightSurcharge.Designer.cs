@@ -22,14 +22,14 @@ namespace FirstAMLLibrary {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ParcelSendCost {
+    internal class ParcelOverweightSurcharge {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ParcelSendCost() {
+        internal ParcelOverweightSurcharge() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace FirstAMLLibrary {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FirstAMLLibrary.ParcelSendCost", typeof(ParcelSendCost).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FirstAMLLibrary.ParcelOverweightSurcharge", typeof(ParcelOverweightSurcharge).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace FirstAMLLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 50.
+        ///   Looks up a localized string similar to 1.
         /// </summary>
         internal static string Heavy {
             get {
@@ -70,7 +70,7 @@ namespace FirstAMLLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 15.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         internal static string Large {
             get {
@@ -79,7 +79,7 @@ namespace FirstAMLLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         internal static string Medium {
             get {
@@ -88,7 +88,7 @@ namespace FirstAMLLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         internal static string Small {
             get {
@@ -97,7 +97,7 @@ namespace FirstAMLLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 25.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         internal static string XL {
             get {

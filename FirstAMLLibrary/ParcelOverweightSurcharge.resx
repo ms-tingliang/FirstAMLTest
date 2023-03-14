@@ -118,23 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Heavy" xml:space="preserve">
-    <value>50</value>
-    <comment>$ per parcel</comment>
+    <value>1</value>
+    <comment>in kg</comment>
   </data>
   <data name="Large" xml:space="preserve">
-    <value>15</value>
-    <comment>$ per parcel</comment>
+    <value>2</value>
+    <comment>in kg</comment>
   </data>
   <data name="Medium" xml:space="preserve">
-    <value>8</value>
-    <comment>$ per parcel</comment>
+    <value>2</value>
+    <comment>in kg</comment>
   </data>
   <data name="Small" xml:space="preserve">
-    <value>3</value>
-    <comment>$ per parcel</comment>
+    <value>2</value>
+    <comment>in kg</comment>
   </data>
   <data name="XL" xml:space="preserve">
-    <value>25</value>
-    <comment>$ per parcel</comment>
+    <value>2</value>
+    <comment>in kg</comment>
   </data>
 </root>

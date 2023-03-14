@@ -2,13 +2,12 @@
 
 namespace FirstAMLLibrary
 {
-    public class Step2
+    public class Step4
     {
-        public string GetSendCostsWithSpeedyTotal(ErrorReporter reporter, bool speedyOption, params Parcel[] parcels)
+        public string GetSendCostsWithSpeedyAndWeightLimitSurchargeTotal(ErrorReporter reporter, bool speedyOption, ParcelCostCalculator calculator, params Parcel[] parcels)
         {
             var classifier = new ParcelClassifier();
             var outputBuilder = new StringBuilder();
-            var calculator = new ParcelCostCalculator(false);
             var totalCost = 0.0;
             foreach (var parcel in parcels)
             {

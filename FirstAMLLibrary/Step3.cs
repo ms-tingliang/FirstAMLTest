@@ -8,7 +8,7 @@ namespace FirstAMLLibrary
         {
             var classifier = new ParcelClassifier();
             var outputBuilder = new StringBuilder();
-            var calculator = new ParcelCostCalculator();
+            var calculator = new ParcelCostCalculator(false);
             var totalCost = 0.0;
             foreach (var parcel in parcels)
             {

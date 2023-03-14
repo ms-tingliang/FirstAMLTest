@@ -61,6 +61,15 @@ namespace FirstAMLLibrary {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 50.
+        /// </summary>
+        internal static string Heavy {
+            get {
+                return ResourceManager.GetString("Heavy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 6.
         /// </summary>
         internal static string Large {

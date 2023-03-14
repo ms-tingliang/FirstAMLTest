@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="ParcelOverweightSurcharge.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ParcelOverweightSurcharge.resx</DependentUpon>
+    </Compile>
     <Compile Update="ParcelSendCost.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -25,6 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="ParcelOverweightSurcharge.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ParcelOverweightSurcharge.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="ParcelSendCost.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ParcelSendCost.Designer.cs</LastGenOutput>
