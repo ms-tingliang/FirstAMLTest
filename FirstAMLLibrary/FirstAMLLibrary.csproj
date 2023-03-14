@@ -17,6 +17,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ParcelDimention.resx</DependentUpon>
     </Compile>
+    <Compile Update="ParcelWeightLimit.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ParcelWeightLimit.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +32,10 @@
     <EmbeddedResource Update="ParcelDimention.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ParcelDimention.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ParcelWeightLimit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ParcelWeightLimit.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
