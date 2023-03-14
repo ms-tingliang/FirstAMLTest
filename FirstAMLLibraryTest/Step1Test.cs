@@ -2,7 +2,7 @@ namespace FirstAMLLibraryTest
 {
     using FirstAMLLibrary;
 
-    public class Tests
+    public class Step1Tests
     {
         [SetUp]
         public void Setup()
@@ -71,6 +71,16 @@ namespace FirstAMLLibraryTest
             var target = new Step1();
             var errorReporter = new ErrorReporter();
             Assert.That(51.0, Is.EqualTo(target.GetSendCost(errorReporter, new Parcel(10), new Parcel(50), new Parcel(100),  new Parcel(1))));
+        }
+
+        [Test]
+        public void TestMultipleParcelsOutput()
+        {
+            var target = new Step1();
+            var errorReporter = new ErrorReporter();
+            Parcel[] parcels = { new Parcel("1", 10), new Parcel("2", 50), new Parcel("3", 100), new Parcel("4", 1) };
+            var expected = "1\tMedium\t8\n2\tLarge\t15\n3\tXL\t25\n4\tSmall\t3\n======================\nTotal\t51\n";
+            Assert.That(expected, Is.EqualTo(target.GetSendCostsWithTotal(errorReporter, parcels)));
         }
     }
 }

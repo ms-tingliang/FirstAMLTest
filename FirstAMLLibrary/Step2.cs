@@ -1,9 +1,14 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace FirstAMLLibrary
 {
-    public class Step1
+    public class Step2
     {
-        public string GetSendCostsWithTotal(ErrorReporter reporter, params Parcel[] parcels)
+        public string GetSendCostsWithSpeedyTotal(ErrorReporter reporter, bool speedyOption, params Parcel[] parcels)
         {
             var classifier = new ParcelClassifier();
             var outputBuilder = new StringBuilder();
@@ -16,21 +21,14 @@ namespace FirstAMLLibrary
                 outputBuilder.AppendFormat("{0}\t{1}\t{2}\n", parcel.Id, classification, cost);
                 totalCost += cost;
             }
+            if (speedyOption)
+            {
+                outputBuilder.AppendFormat("Speedy\t\t{0}\n", totalCost);
+                totalCost += totalCost;
+            }
             outputBuilder.AppendFormat("======================\n");
             outputBuilder.AppendFormat("Total\t{0}\n", totalCost);
             return outputBuilder.ToString();
-        }
-
-        public double GetSendCost(ErrorReporter reporter, params Parcel[] parcels)
-        {
-            double totalCost = 0;
-            var classifier = new ParcelClassifier();
-            var calculator = new ParcelCostCalculator();
-            foreach (var parcel in parcels)
-            {
-                totalCost += calculator.CalculateUnitCost(parcel, classifier, reporter);
-            }
-            return totalCost;
         }
     }
 }
